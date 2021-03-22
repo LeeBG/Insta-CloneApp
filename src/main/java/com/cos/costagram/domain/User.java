@@ -37,7 +37,7 @@ public class User {
 	
 	private String provider; //제공자 Google,  Facebook, Naver 구분
 	
-	private String role;
+	private String role;	//User, Admin
 	
 	@CreationTimestamp
 	private Timestamp createDate;
