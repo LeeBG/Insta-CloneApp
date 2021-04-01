@@ -21,10 +21,14 @@ spring:
   jpa:
     open-in-view: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     show-sql: true
+  
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
       
   servlet:
     multipart:
@@ -35,6 +39,14 @@ spring:
     user:
       name: test
       password: 1234   
-      
-  file:
-    path: D:\workspace\lastwork\costagram\src\main\resources\upload
+    oauth2:
+      client:
+        registration:
+          facebook:
+            client-id: 196000978543660
+            client-secret: fecb6c79bf1622c184bed0bc9f21a457
+            scope:
+            - email
+            - public_profile
+file:
+  path: D:/workspace/Springboot-Costagram-V3/src/main/resources/upload/
